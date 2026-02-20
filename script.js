@@ -18,13 +18,6 @@ const zeroCountDisplay = document.getElementById("zeroCount");
 const powerCountDisplay = document.getElementById("powerCount");
 const attendeeListContainer = document.getElementById("attendeeListContainer");
 
-// Load counts from local storage on page load
-loadCountsFromLocalStorage();
-
-// Load attendees from local storage on page load
-loadAttendeesFromLocalStorage();
-displayAttendeeList();
-
 // Listen for form submission
 checkInForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -232,3 +225,10 @@ function displayAttendeeList() {
 
   attendeeListContainer.innerHTML = attendeeHTML;
 }
+
+// Load counts from local storage on page load
+loadCountsFromLocalStorage();
+
+// Load attendees from local storage on page load
+loadAttendeesFromLocalStorage();
+displayAttendeeList();
