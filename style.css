@@ -166,12 +166,7 @@ button .fas {
   margin-right: 10px;
 }
 
-.attendance-header i {
-  font-size: 22px;
-  margin-right: 8px;
-}
-
-/* Attendance section spacing */
+/* Attendance section spacing and styling */
 .attendance-header {
   display: flex;
   align-items: center;
@@ -179,7 +174,13 @@ button .fas {
   gap: 6px;
   margin-bottom: 15px;
   font-size: 17px;
-  color: #000000;
+  color: #000000 !important;
+}
+
+.attendance-header i {
+  font-size: 22px;
+  margin-right: 8px;
+  color: #0071c5;
 }
 
 /* Attendance tracker styling */
@@ -193,18 +194,8 @@ button .fas {
   text-align: center;
 }
 
-.attendance-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  margin-bottom: 15px;
-  font-size: 17px;
-  color: #000000;
-}
-
 #attendeeCount {
-  color: #000000;
+  color: #000000 !important;
   font-size: 24px;
   font-weight: 700;
   margin: 0 2px;
@@ -218,7 +209,7 @@ button .fas {
 
 /* Max attendees text */
 .attendance-header span:last-child {
-  color: #000000;
+  color: #000000 !important;
   font-size: 17px;
 }
 
