@@ -80,9 +80,9 @@ body {
 
 /* Main container */
 .container {
-  max-width: 900px;
-  width: 95%;
-  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: none;
+  margin: 0 20px;
   padding: 30px;
   background: white;
   border-radius: 16px;
@@ -184,10 +184,10 @@ button .fas {
 
 /* Attendance tracker styling */
 .attendance-tracker {
-  max-width: 900px;
-  width: 95%;
-  margin: 0 auto 20px;
-  padding: 0 20px;
+  width: calc(100% - 40px);
+  max-width: none;
+  margin: 0 20px 20px 20px;
+  padding: 0;
   text-align: center;
 }
 
@@ -417,17 +417,41 @@ select {
   padding: 20px;
 }
 
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .container {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+
+  .attendance-tracker {
+    width: calc(100% - 30px);
+    margin: 0 15px 20px 15px;
+  }
+
+  .teams-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
     padding: 35px 20px;
+    margin-bottom: 15px;
   }
   .hero h1 {
     font-size: 38px;
   }
   .container {
-    padding: 32px;
-    margin: 0 15px 30px;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    padding: 20px;
+  }
+
+  .attendance-tracker {
+    width: calc(100% - 30px);
+    margin: 0 15px 15px 15px;
   }
 
   .form-group {
@@ -449,5 +473,43 @@ select {
 
   .teams-grid {
     grid-template-columns: 1fr;
+  }
+
+  .attendee-items {
+    max-height: 250px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .container {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    padding: 15px;
+  }
+
+  .attendance-tracker {
+    width: calc(100% - 20px);
+    margin: 0 10px 15px 10px;
+  }
+
+  .check-in {
+    padding: 20px;
+  }
+
+  .form-label {
+    margin-bottom: 10px;
+  }
+
+  .attendee-items {
+    max-height: 200px;
   }
 }
