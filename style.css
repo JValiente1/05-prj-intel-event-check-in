@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -346,6 +347,69 @@ select {
   font-size: 15px;
   font-weight: 500;
   color: #475569;
+}
+
+/* Attendee List */
+.attendee-list {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.attendee-list h3 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.attendee-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.attendee-item {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  border-left: 4px solid #0071c5;
+  font-size: 14px;
+  color: #475569;
+}
+
+.attendee-item.water {
+  border-left-color: #0099db;
+  background-color: #f0f9ff;
+}
+
+.attendee-item.zero {
+  border-left-color: #10b981;
+  background-color: #f0fdf4;
+}
+
+.attendee-item.power {
+  border-left-color: #f59e0b;
+  background-color: #fffbf0;
+}
+
+.attendee-name {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.attendee-team {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+.no-attendees {
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Mobile responsive */
